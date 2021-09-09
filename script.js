@@ -20,7 +20,7 @@ function getCovidData() {
             vac1 = data.KL.districts.Kozhikode.total.vaccinated1
             vac2 = data.KL.districts.Kozhikode.total.vaccinated2
             const ids = ["total", "confirmed", "recoverd", "first-dose", "second-dose", "overall", "confirm", "recover", "first-vaccine", "second-vaccine"]
-            const values = [test, conform, recover, dose1, dose2, tes, con, rec,vac1,vac2]
+            const values = [test, conform, recover, dose1, dose2, tes, con, rec, vac1, vac2]
             for (var i = 0; i < ids.length; i++) {
                 document.getElementById(ids[i]).innerHTML = values[i].toLocaleString('en-IN')
             }
